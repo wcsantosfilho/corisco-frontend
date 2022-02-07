@@ -1,0 +1,12 @@
+.headerContainer {
+    background-color: #333;
+    border: 1px solid #111;
+}
+
+.headerContent {
+    color: #fff;
+    background-color: #333;
+    margin: 0;
+    font-family: 'Trirong', Times, serif;
+    font-style: italic;
+}
