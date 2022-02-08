@@ -3,11 +3,13 @@ import List from './List'
 import GenericCard from './GenericCard';
 import Footer from './Footer';
 import Form from './Form';
+import Logo from './Logo'
 
 function MainLayout() {
     return (
         <div className="grid-container">
             <div className="page-header">
+                <Logo />
                 <Header applicationName="corisco" />
             </div>
             <div className="status-card">
