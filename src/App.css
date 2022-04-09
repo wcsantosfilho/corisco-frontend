@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +29,110 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.page-header { 
+  grid-area: header; 
+  width: 100%;
+}
+.page-left { 
+    grid-area: status-card;
+    font-family: Tahoma, Verdana, sans-serif; 
+}
+.page-main { grid-area: main; }
+.page-footer { 
+    grid-area: footer; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page-footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.grid-container {
+    max-width: 1128px;
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'status-card main main main main main'
+        'footer footer footer footer footer footer';
+    grid-template-columns: auto auto auto;
+    background-color: #666f75;
+    font-family: Tahoma, Verdana, sans-serif; 
+    padding: 10px;
+    margin: 0 auto;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.header-title {
+    font-family: "Trirong", serif;
+}
+
+.generic-card {
+    background-color: #aaaaaa;
+    width: auto ;
+    border: 0px solid #474747;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.bet-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bet-table th {
+  text-align: center;
+  padding: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+.bet-table td {
+  text-align: center;
+  padding: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+.simple-form {
+  background-color: #bbbbbb;
+  width: auto ;
+  border: 0px solid #474747;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.simple-form h3 {
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.simple-form label {
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+  padding: 0px;
+  margin: 0px;
 }
